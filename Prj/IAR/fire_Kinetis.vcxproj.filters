@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="App">
+      <UniqueIdentifier>{46D6870B-B2DF-877C-3B5B-9E7CA763937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Board">
+      <UniqueIdentifier>{2DDBE70C-99EF-0FBE-6271-B31DCE440CEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chip">
+      <UniqueIdentifier>{4995837C-35CC-840D-DEB8-6A10CACE000F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LIB">
+      <UniqueIdentifier>{DCFF870B-4809-887C-D184-9E7C3D8D937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LIB\CMSIS">
+      <UniqueIdentifier>{2AF8E130-9662-96A7-DFA0-474D4B4A74FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LIB\FatFs">
+      <UniqueIdentifier>{5FC52331-CB2F-D8A7-146E-894D8017B6FC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Board\inc\FIRE_MK60_conf.h">
+      <Filter>Board</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Chip\inc\common.h">
+      <Filter>Chip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Chip\inc\control.h">
+      <Filter>Chip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lib\FatFs\diskio.h">
+      <Filter>LIB\FatFs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lib\FatFs\ff.h">
+      <Filter>LIB\FatFs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lib\FatFs\ffconf.h">
+      <Filter>LIB\FatFs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lib\FatFs\integer.h">
+      <Filter>LIB\FatFs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\App\FML_DiskIO.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\Fuzzy_PID.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\HAL_SDHC.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\MK60_it.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\Recognition.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\TestFunction.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\camera.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\io.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\main.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\printf.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\App\sora_k60_ftm.c">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Board\src\FIRE_LED.C">
+      <Filter>Board</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Board\src\FIRE_MK60_conf.c">
+      <Filter>Board</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Board\src\FIRE_MMA7455.c">
+      <Filter>Board</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Board\src\FIRE_NRF24L0.c">
+      <Filter>Board</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Board\src\FIRE_SCCB.c">
+      <Filter>Board</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Board\src\FIRE_key.c">
+      <Filter>Board</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Board\src\SYN6288.c">
+      <Filter>Board</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Board\src\UART.c">
+      <Filter>Board</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Board\src\lcd.c">
+      <Filter>Board</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\IAR\startup_MK60DZ10.s">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\IAR\system_MK60DZ10.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\IIC.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_DWT.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_PIT.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_SysTick.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_adc.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_dac.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_dma.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_flash.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_ftm.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_gpio.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_i2c.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_lptmr.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_mcg.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_port.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_spi.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_uart.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\MK60_wdog.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\control.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\misc.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Chip\src\vectors.c">
+      <Filter>Chip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lib\FatFs\ff.c">
+      <Filter>LIB\FatFs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lib\FatFs\option\ccsbcs.c">
+      <Filter>LIB\FatFs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lib\FatFs\option\syscall.c">
+      <Filter>LIB\FatFs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Lib\CMSIS\iar_cortexM4l_math.a">
+      <Filter>LIB\CMSIS</Filter>
+    </None>
+  </ItemGroup>
+</Project>

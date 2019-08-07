@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="FX15_Debug|Win32">
+      <Configuration>FX15_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FX15_Release|Win32">
+      <Configuration>FX15_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DZ10_Debug|Win32">
+      <Configuration>DZ10_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DZ10_Release|Win32">
+      <Configuration>DZ10_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{21E21885-0D45-A829-B6CA-E0DFA20C74AC}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>fire_Kinetis</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FX15_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FX15_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DZ10_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DZ10_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FX15_Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='FX15_Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DZ10_Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DZ10_Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FX15_Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\FX15_Debug\</OutDir>
+    <IntDir>obj\FX15_Debug\</IntDir>
+    <TargetName>fire_Kinetis</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>$(VC_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FX15_Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\FX15_Release\</OutDir>
+    <IntDir>obj\FX15_Release\</IntDir>
+    <TargetName>fire_Kinetis</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>$(VC_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DZ10_Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\DZ10_Debug\</OutDir>
+    <IntDir>obj\DZ10_Debug\</IntDir>
+    <TargetName>fire_Kinetis</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>$(VC_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DZ10_Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\DZ10_Release\</OutDir>
+    <IntDir>obj\DZ10_Release\</IntDir>
+    <TargetName>fire_Kinetis</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>$(VC_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FX15_Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>IAR;DEBUG;ARM_MATH_CM4;MK60F15;_IAR_;__ICCARM__;_Pragma(x)=;__interrupt=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\App\Inc;..\..\Board\Inc;..\..\Chip\inc;..\..\Chip\inc\IAR;..\..\Chip\inc\kinetis;..\..\Lib\CMSIS\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FX15_Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;IAR;ARM_MATH_CM4;MK60F15;_IAR_;__ICCARM__;_Pragma(x)=;__interrupt=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\App\Inc;..\..\Board\Inc;..\..\Chip\inc;..\..\Chip\inc\IAR;..\..\Chip\inc\kinetis;..\..\Lib\CMSIS\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DZ10_Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>IAR;DEBUG;ARM_MATH_CM4;MK60DZ10;_IAR_;__ICCARM__;_Pragma(x)=;__interrupt=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\App\Inc;..\..\Board\Inc;..\..\Chip\inc;..\..\Chip\inc\IAR;..\..\Chip\inc\kinetis;..\..\Lib\CMSIS\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DZ10_Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;IAR;ARM_MATH_CM4;MK60DZ10;_IAR_;__ICCARM__;_Pragma(x)=;__interrupt=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\App\Inc;..\..\Board\Inc;..\..\Chip\inc;..\..\Chip\inc\IAR;..\..\Chip\inc\kinetis;..\..\Lib\CMSIS\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Board\inc\FIRE_MK60_conf.h" />
+    <ClInclude Include="..\..\Chip\inc\common.h" />
+    <ClInclude Include="..\..\Chip\inc\control.h" />
+    <ClInclude Include="..\..\Lib\FatFs\diskio.h" />
+    <ClInclude Include="..\..\Lib\FatFs\ff.h" />
+    <ClInclude Include="..\..\Lib\FatFs\ffconf.h" />
+    <ClInclude Include="..\..\Lib\FatFs\integer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\App\FML_DiskIO.c" />
+    <ClCompile Include="..\..\App\Fuzzy_PID.c" />
+    <ClCompile Include="..\..\App\HAL_SDHC.c" />
+    <ClCompile Include="..\..\App\MK60_it.c" />
+    <ClCompile Include="..\..\App\Recognition.c" />
+    <ClCompile Include="..\..\App\TestFunction.c" />
+    <ClCompile Include="..\..\App\camera.c" />
+    <ClCompile Include="..\..\App\io.c" />
+    <ClCompile Include="..\..\App\main.c" />
+    <ClCompile Include="..\..\App\printf.c" />
+    <ClCompile Include="..\..\App\sora_k60_ftm.c" />
+    <ClCompile Include="..\..\Board\src\FIRE_LED.C" />
+    <ClCompile Include="..\..\Board\src\FIRE_MK60_conf.c" />
+    <ClCompile Include="..\..\Board\src\FIRE_MMA7455.c" />
+    <ClCompile Include="..\..\Board\src\FIRE_NRF24L0.c" />
+    <ClCompile Include="..\..\Board\src\FIRE_SCCB.c" />
+    <ClCompile Include="..\..\Board\src\FIRE_key.c" />
+    <ClCompile Include="..\..\Board\src\SYN6288.c" />
+    <ClCompile Include="..\..\Board\src\UART.c" />
+    <ClCompile Include="..\..\Board\src\lcd.c" />
+    <ClCompile Include="..\..\Chip\src\IAR\startup_MK60DZ10.s" />
+    <ClCompile Include="..\..\Chip\src\IAR\system_MK60DZ10.c" />
+    <ClCompile Include="..\..\Chip\src\IIC.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_DWT.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_PIT.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_SysTick.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_adc.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_dac.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_dma.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_flash.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_ftm.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_gpio.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_i2c.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_lptmr.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_mcg.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_port.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_spi.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_uart.c" />
+    <ClCompile Include="..\..\Chip\src\MK60_wdog.c" />
+    <ClCompile Include="..\..\Chip\src\control.c" />
+    <ClCompile Include="..\..\Chip\src\misc.c" />
+    <ClCompile Include="..\..\Chip\src\vectors.c" />
+    <ClCompile Include="..\..\Lib\FatFs\ff.c" />
+    <ClCompile Include="..\..\Lib\FatFs\option\ccsbcs.c" />
+    <ClCompile Include="..\..\Lib\FatFs\option\syscall.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Lib\CMSIS\iar_cortexM4l_math.a" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fire_Kinetis", "fire_Kinetis.vcxproj", "{21E21885-0D45-A829-B6CA-E0DFA20C74AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DZ10_Debug|Win32 = DZ10_Debug|Win32
+		DZ10_Release|Win32 = DZ10_Release|Win32
+		FX15_Debug|Win32 = FX15_Debug|Win32
+		FX15_Release|Win32 = FX15_Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21E21885-0D45-A829-B6CA-E0DFA20C74AC}.DZ10_Debug|Win32.ActiveCfg = DZ10_Debug|Win32
+		{21E21885-0D45-A829-B6CA-E0DFA20C74AC}.DZ10_Debug|Win32.Build.0 = DZ10_Debug|Win32
+		{21E21885-0D45-A829-B6CA-E0DFA20C74AC}.DZ10_Release|Win32.ActiveCfg = DZ10_Release|Win32
+		{21E21885-0D45-A829-B6CA-E0DFA20C74AC}.DZ10_Release|Win32.Build.0 = DZ10_Release|Win32
+		{21E21885-0D45-A829-B6CA-E0DFA20C74AC}.FX15_Debug|Win32.ActiveCfg = FX15_Debug|Win32
+		{21E21885-0D45-A829-B6CA-E0DFA20C74AC}.FX15_Debug|Win32.Build.0 = FX15_Debug|Win32
+		{21E21885-0D45-A829-B6CA-E0DFA20C74AC}.FX15_Release|Win32.ActiveCfg = FX15_Release|Win32
+		{21E21885-0D45-A829-B6CA-E0DFA20C74AC}.FX15_Release|Win32.Build.0 = FX15_Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
