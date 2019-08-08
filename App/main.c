@@ -188,45 +188,49 @@ void  main(void)
 	Motor_Power_Init;
 	DisableInterrupts;
 	LED_init();
+
+	FTM_COMP_init(FTM1, FTM_G0, 10000, 1000, 500);
+	//FTM_PWM_init(FTM1, FTM_CH0, 10000, 1000);
 	//cccv_init();
 	//pit_init_ms(PIT0, 20);
 	//set_vector_handler(PIT0_VECTORn, PIT0_IRQHandler);
 	//enable_irq(PIT0_IRQn);
 	EnableInterrupts;
 
-	spi_init(SPI0, SPIn_PCS1, MASTER, 10000);
-	cmd[0] = 0x20; cmd[1] = 0x0F;
-	spi_mosi(SPI0, SPIn_PCS1, cmd, NULL, 2);
-	cmd[0] = 0x21; cmd[1] = 0x00;
-	spi_mosi(SPI0, SPIn_PCS1, cmd, NULL, 2);	
-	cmd[0] = 0x22; cmd[1] = 0x08;
-	spi_mosi(SPI0, SPIn_PCS1, cmd, NULL, 2);	
-	cmd[0] = 0x23; cmd[1] = 0x30;
-	spi_mosi(SPI0, SPIn_PCS1, cmd, NULL, 2);	
-	cmd[0] = 0x24; cmd[1] = 0x00;
-	spi_mosi(SPI0, SPIn_PCS1, cmd, NULL, 2);
+	//spi_init(SPI0, SPIn_PCS1, MASTER, 10000);
+	//cmd[0] = 0x20; cmd[1] = 0x0F;
+	//spi_mosi(SPI0, SPIn_PCS1, cmd, NULL, 2);
+	//cmd[0] = 0x21; cmd[1] = 0x00;
+	//spi_mosi(SPI0, SPIn_PCS1, cmd, NULL, 2);	
+	//cmd[0] = 0x22; cmd[1] = 0x08;
+	//spi_mosi(SPI0, SPIn_PCS1, cmd, NULL, 2);	
+	//cmd[0] = 0x23; cmd[1] = 0x30;
+	//spi_mosi(SPI0, SPIn_PCS1, cmd, NULL, 2);	
+	//cmd[0] = 0x24; cmd[1] = 0x00;
+	//spi_mosi(SPI0, SPIn_PCS1, cmd, NULL, 2);
 
-	while(1)
+	while (1)
 	{
-		////WHO_AM_I
-		//cmd[0] = 0x8F; cmd[1] = 0xFF;
+		LCD_P6x8Str(0, 1, "Complementary");
+		//////WHO_AM_I
+		////cmd[0] = 0x8F; cmd[1] = 0xFF;
+		////spi_mosi(SPI0, SPIn_PCS1, cmd, data, 2);
+		//cmd[0] = OUT_X_H | 0x80; cmd[1] = 0xFF;
 		//spi_mosi(SPI0, SPIn_PCS1, cmd, data, 2);
-		cmd[0] = OUT_X_H | 0x80; cmd[1] = 0xFF;
-		spi_mosi(SPI0, SPIn_PCS1, cmd, data, 2);
-		acc = data[1] << 8;
-		cmd[0] = OUT_X_L | 0x80; cmd[1] = 0xFF;
-		spi_mosi(SPI0, SPIn_PCS1, cmd, data, 2);
-		acc += data[1];
-		sprintf(text, "%d          ", (int)acc);
-		LCD_P6x8Str(0, 2, text);
-		//if	(cccv_status == CCCV_Perparing)LCD_P6x8Str(0, 1, "Perparing   ");
-		//else if (cccv_status == CCCV_Charging)LCD_P6x8Str(0, 1, "Charging    ");
-		//else if (cccv_status == CCCV_Finished)LCD_P6x8Str(0, 1, "Finished    ");
-		////sprintf(text, "BAT %d mV          ", (int)(CCCV_GET_BAT * CCCV_ADC_SCALE * 1000));
-		//sprintf(text, "BAT %d mV          ", (int)(cccv_battery * 1000));
+		//acc = data[1] << 8;
+		//cmd[0] = OUT_X_L | 0x80; cmd[1] = 0xFF;
+		//spi_mosi(SPI0, SPIn_PCS1, cmd, data, 2);
+		//acc += data[1];
+		//sprintf(text, "%d          ", (int)acc);
 		//LCD_P6x8Str(0, 2, text);
-		//sprintf(text, "POW %d mW          ", (int)(cccv_power * 1000));
-		//LCD_P6x8Str(0, 3, text);
+		////if	(cccv_status == CCCV_Perparing)LCD_P6x8Str(0, 1, "Perparing   ");
+		////else if (cccv_status == CCCV_Charging)LCD_P6x8Str(0, 1, "Charging    ");
+		////else if (cccv_status == CCCV_Finished)LCD_P6x8Str(0, 1, "Finished    ");
+		//////sprintf(text, "BAT %d mV          ", (int)(CCCV_GET_BAT * CCCV_ADC_SCALE * 1000));
+		////sprintf(text, "BAT %d mV          ", (int)(cccv_battery * 1000));
+		////LCD_P6x8Str(0, 2, text);
+		////sprintf(text, "POW %d mW          ", (int)(cccv_power * 1000));
+		////LCD_P6x8Str(0, 3, text);
 		DELAY_MS(500);
 	}
 }
